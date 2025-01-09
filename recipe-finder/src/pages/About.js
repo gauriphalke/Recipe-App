@@ -46,7 +46,8 @@ const About = () => {
             {/* Contact Section (Call to Action) */}
             <div className="text-center mt-8">
                 <a 
-                    href="/contact"
+                    href="/contact
+                    "
                     className="text-lg font-semibold text-indigo-600 hover:text-indigo-800 transition duration-300"
                 >
                     Contact Us for More Information
