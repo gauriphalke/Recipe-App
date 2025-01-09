@@ -13,6 +13,7 @@ const Navbar = () => {
                 <Link to="/" className="text-white hover:text-gray-200 transition duration-300">Home</Link>
                     <Link to="/about" className="text-white hover:text-gray-200 transition duration-300">About</Link>
                     <Link to="/contact" className="text-white hover:text-gray-200 transition duration-300">Contact</Link>
+                    <Link to="/save" className="text-white hover:text-gray-200 transition duration-300">Save</Link>
                 </div>
                 {/* Mobile Menu Button */}
                 <div className="md:hidden">
