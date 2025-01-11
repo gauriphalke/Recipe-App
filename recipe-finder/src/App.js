@@ -9,6 +9,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import SavePage from './pages/SavePage';
 import store from './redux/store';
+import Footer from './components/Footer';
 
 const App = () => {
     return (
@@ -21,7 +22,8 @@ const App = () => {
                      <Route path= "/about" element={<About />} />
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/save' element={<SavePage />} />
-                </Routes>
+                    </Routes>
+                    <Footer />
             </Router>
         </Provider>
     );
