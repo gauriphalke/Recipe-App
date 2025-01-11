@@ -4,7 +4,7 @@ const Contact = () => {
             <div className="max-w-7xl mx-auto px-6 text-center">
                 <h2 className="text-3xl font-extrabold text-gray-900">Contact Us</h2>
                 <p className="mt-2 text-lg text-gray-600">Have questions or suggestions? Get in touch!</p>
-                <form className="mt-8 max-w-2xl mx-auto space-y-6">
+                <form className="mt-8 max-w-2xl mx-auto space-y-6 text-left">
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                         <input
@@ -34,7 +34,7 @@ const Contact = () => {
                     </div>
                     <button
                         type="submit"
-                        className="w-full py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"
+                        className="w-50vw py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition duration-300"
                     >
                         Submit
                     </button>
