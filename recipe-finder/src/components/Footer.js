@@ -63,10 +63,7 @@ const Footer = () => {
                 </a>
             </div>
 
-            {/* Footer Bottom Line */}
-            <div className="border-t border-gray-700 mt-6 pt-4 text-sm text-gray-400">
-                Designed with ❤️ using React & Tailwind CSS
-            </div>
+            
         </footer>
     );
 }
