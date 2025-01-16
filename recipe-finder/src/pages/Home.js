@@ -1,12 +1,17 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchRecipes } from '../redux/recipeSlice';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import RecipeCard from '../components/RecipeCard';
 
 const Home = () => {
     const [query, setQuery] = useState('');
     const dispatch = useDispatch();
     const { recipes, status } = useSelector(state => state.recipes);
+
+    // Fetch random recipes when the component mounts
+    useEffect(() => {
+        dispatch(fetchRecipes('random'));
+    }, [dispatch]);
 
     const searchHandler = () => {
         if (query.trim()) {
@@ -18,7 +23,9 @@ const Home = () => {
         <div className="min-h-screen bg-gray-100 text-gray-800 p-8">
             {/* Search Bar Section */}
             <div className="flex flex-col items-center gap-4 mb-8">
-                <h1 className="text-4xl font-bold text-blue-600">Recipe Finder</h1>
+                <div>
+                    <h1 className="text-4xl text-black-600">Cook Like a Pro with Our <bold className="text-orange-600">Easy</bold> and <bold className="text-orange-600">Tasty</bold> Recipes</h1>
+                </div>
                 <div className="flex w-full max-w-lg gap-4">
                     <input
                         type="text"
@@ -27,8 +34,8 @@ const Home = () => {
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
                     />
-                    <button 
-                        onClick={searchHandler} 
+                    <button
+                        onClick={searchHandler}
                         className={`px-6 py-3 rounded-lg text-lg font-semibold transition-all duration-300
                             ${query ? 'bg-blue-500 text-white hover:bg-blue-600' : 'bg-gray-300 text-gray-700 cursor-not-allowed'}
                         `}
