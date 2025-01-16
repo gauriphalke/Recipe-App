@@ -1,4 +1,3 @@
-// src/components/RecipeCard.jsx
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { saveRecipe } from '../redux/store';
