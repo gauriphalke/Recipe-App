@@ -1,4 +1,3 @@
-// src/redux/recipeSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 // Async thunk for fetching recipes
