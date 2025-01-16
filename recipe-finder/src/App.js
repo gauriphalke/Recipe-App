@@ -10,6 +10,8 @@ import About from './pages/About';
 import SavePage from './pages/SavePage';
 import store from './redux/store';
 import Footer from './components/Footer';
+import Newsletters from './pages/NewsLetter';
+import Main from './pages/Main';
 
 const App = () => {
     return (
@@ -17,13 +19,15 @@ const App = () => {
             <Router>
                 <Navbar />
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<Main />} />
+                    <Route path="/home" element={<Home />} />
                     <Route path="/recipe/:id" element={<RecipeDetails />} />
-                     <Route path= "/about" element={<About />} />
+                    <Route path="/about" element={<About />} />
                     <Route path='/contact' element={<Contact />} />
-                    <Route path='/save' element={<SavePage />} />
-                    </Routes>
-                    <Footer />
+                    <Route path='/newsletter' element={<Newsletters />} />
+                    <Route path='/savepage' element={<SavePage />} />
+                </Routes>
+                <Footer />
             </Router>
         </Provider>
     );
