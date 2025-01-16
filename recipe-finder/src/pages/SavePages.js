@@ -1,4 +1,3 @@
-// src/pages/SavePage.jsx
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { selectSavedRecipes, removeRecipe } from '../redux/recipeSlice';
@@ -35,4 +34,3 @@ const SavePage = () => {
 };
 
 export default SavePage;
-
