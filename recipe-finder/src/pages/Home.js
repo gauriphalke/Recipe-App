@@ -20,7 +20,7 @@ const Home = () => {
     };
 
     return (
-        <div className="min-h-screen bg-gray-100 text-gray-800 p-8">
+        <div className="min-h-screen bg-gray-100 text-gray-800 p-8 bg-[url('https://media.istockphoto.com/id/639091546/photo/cooking-chiken-steaks.jpg?s=612x612&w=0&k=20&c=7paRJobFVUWubNoopQTZ53O3CQ40HgeOcbkyE6N1cx0=')] bg-cover bg-center bg-no-repeat">
             {/* Search Bar Section */}
             <div className="flex flex-col items-center gap-4 mb-8">
                 <div>
@@ -59,7 +59,7 @@ const Home = () => {
 
             {/* No Results Message */}
             {recipes?.length === 0 && status === 'succeeded' && (
-                <p className="text-center text-gray-500 font-semibold mt-8">
+                <p className="text-center text-black-500 font-semibold mt-8">
                     No recipes found. Try a different search term!
                 </p>
             )}
